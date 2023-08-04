@@ -21,25 +21,8 @@
         Console.WriteLine($" ]");
         Console.WriteLine();
     }
-    static bool IsEven(int number)
-    {
-        if (number % 2 == 0)
-        {
-            return true; 
-
-        }
-        else
-        {
-            return false;
-        }
-    }
-    static bool IsOdd (int number)
-    {
-        if ( number  != 0)
-        {
-            return true;
-
-        }
-        else { return false; }
-    }
+    static bool IsEven(int numbe ) => numbe % 2 == 0;
+  
+    static bool IsOdd (int number) => !IsEven(number);
+   
 }
